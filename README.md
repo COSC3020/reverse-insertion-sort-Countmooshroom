@@ -37,3 +37,16 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
+
+
+## Answer
+
+I believe the average time complexity of an insertion sort is $\Theta(n^2)$.
+Each time the inner loop starts, it could check only the first pair of numbers,
+or it could check every pair in the range ($n$).  Then, on average, the inner loop
+will take $n/2$ iterations.  The outside loop will still go through n iterations,
+so the total time complexity is $n^2/2$.  However, since constants don't matter,
+it is just $n^2$.
+
+
+
